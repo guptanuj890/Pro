@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi House Price Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- <img src="images/wine.png" alt="Your Logo"> -->
+        <div class="logo">
+            <img src="images/House.png" alt="Your Logo">
+        </div>
+        <h1>House Price Prediction</h1>
+        
+    </header>
+    <main>
+        <div class="container">
+            <h2>Provide Values for prediction</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="Area">Area:</label>
+                    <input type="text" id="Area" name="Area" required>
+                </div>
+                <label for="BHK">BHK:</label>
+                <select id="BHK" name="BHK">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <br>
+                <br>
+                <label for="Bathroom">Bathroom:</label>
+                <select id="Bathroom" name="Bathroom">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <br>
+                <br>
+                <label for="Furnishing">Furnishing:</label>
+                <select id="Furnishing" name="Furnishing">
+                    <option value="Semi-Furnished">Semi-Furnished</option>
+                    <option value="Furnished">Furnished</option>
+                    <option value="Unfurnished">Unfurnished</option>
+                </select>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="Locality">Locality:</label>
+                    <input type="text" id="Locality" name="Locality" required>
+                </div>
+                <div class="form-group">
+                    <label for="Parking">Parking:</label>
+                    <input type="number" id="Parking" name="Parking" required>
+                </div>
+                <br>
+                <br>
+                <label for="Status">Status:</label>
+                <select id="Status" name="Status">
+                    <option value="Ready To Move">Ready To Move</option>
+                    <option value="Almost Ready">Almost Ready</option>
+                </select>
+                <br>
+                <br>
+                <label for="Transaction">Transaction:</label>
+                <select id="Transaction" name="Transaction">
+                    <option value="New Property">Ready To Move</option>
+                    <option value="Resale">Almost Ready</option>
+                </select>
+                <br>
+                <br>
+                <label for="Type">Type:</label>
+                <select id="Type" name="Type">
+                    <option value="Apartment">Apartment</option>
+                    <option value="Builder Floor">Builder Floor</option>
+                </select>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="PerSqft">PerSqft:</label>
+                    <input type="text" id="PerSqft" name="PerSqft" required>
+                </div>
+    
+                <div class="form-group">
+                    <input type="submit" value="Predict">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Harry's Homes</p>
+    </footer>
+</body>
+</html>

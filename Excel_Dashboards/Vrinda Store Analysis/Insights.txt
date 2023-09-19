@@ -1,0 +1,9 @@
+Insights:
+
+1. Most of the purchases are happening between Jan and Aug, there is slowness in the market from Sep to Dec.
+2. March is having the most of the purchases.
+3. Women are more likely to buy compared to men like 64%.
+4. Among Women, women from age greater than 30 and less than 50 are doing the most of the shopping.
+5. Almost all the orders are delievered which is good for the bussiness.
+6. Maharashtra, Karnataka and Uttar Pradest are the top 3 states in shopping.
+7. Around 80% of the orders are from Amazon, Flipkart and Myntra.
