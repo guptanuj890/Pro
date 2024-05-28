@@ -1,0 +1,108 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medcial Advice for Heart Disease</title>
+    <link rel="stylesheet" href="static\static.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Medcial Advice for Heart Disease</h1>
+        
+    </header>
+    <main>
+        <div id="abc">
+            <img src="static\medical.png" alt="">
+            <div class="container">
+                <h2>Fill Out the form for Medical Advice</h2>
+                <form action="{{url_for('predict')}}" method="post">
+                    <div class="row form-input-group">
+                        <label>Age</label>
+                        <input name="Age" type="number" min="1" max="80">
+    
+                        <label>Gender</label>
+                        <select name="Gender">
+                            <option value=" "></option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <label>Chest Pain Type </label>
+                            <select name="chestpain">
+                                <option value=" "></option>
+                                <option value="ASY">Asymptomatic</option>
+                                <option value="NAP">Non-Anginal Pain</option>
+                                <option value="ATA">Atypical Angina</option>
+                                <option value="TA">Typical Angina</option>
+                            </select>
+                            <label>RestingBP</label>
+                            <input name="RestingBP" type="number" "="" min="0" max="200">
+                        </div>
+                    </div>
+                    <div class="form-input-group">
+                        <div class="row">
+                            <label>Cholesterol</label>
+                            <input name="cholesterol" type="number" min="100" max="400">
+    
+                            <label>FastingBS</label>
+                            <select name="FastingBS">
+                                <option value=""></option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                            </select>    
+                        </div>
+                    </div>
+                    <div>
+                        <label>Resting ECG</label>
+                        <select name="RestingECG">
+                            <option value=""></option>
+                            <option value="Normal">Normal</option>
+                            <option value="LVH">LVH</option>
+                            <option value="ST">ST</option>
+                        </select>
+    
+                    <label>Max Heart Rate</label>
+                    <input name="MaxHR" type="number" min="60" max="200">
+                </div>
+                <div>
+    
+    
+                    <label>Old Peak</label>
+                    <input name="OldPeak" type="number" min="-3" max="6">
+                    <label>Exercise Angina</label>
+                        <select name="ExerciseAngina">
+                            <option value=""></option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                </div>
+                <div>
+                <label style="float: left">ST_Slope</label>
+                        <select name="ST_Slope">
+                            <option value=""></option>
+                            <option value="Flat">Flat</option>
+                            <option value="Up">Up</option>
+                            <option value="Down">Down</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Predict">
+                </div>
+                </form>
+                <!-- <h1> {{ prediction_text }}</h1> -->
+
+                {% if prediction_text == 1.0 %}
+                    <h1>You are at high risk of having Heart Disease.</h1>
+                {% elif prediction_text == 0.0 %}
+                    <h1>You are not at risk of having Heart Disease.</h1>
+                {% endif %}
+
+            </div>
+        </div>
+    </main>
+    
+
+
+</body></html>
