@@ -93,7 +93,7 @@
                             <a href="index.php" style="float: left; padding-left: 50px; color: black">Medical Legacy Directory</a>
                         </span>
                         <span style="float: right;">
-                            <a href="userHome.php" style="color:#252525"><i class="fas fa-home"></i></a>  
+                            <a href="doctorHome.php" style="color:#252525"><i class="fas fa-home"></i></a>  
                             <a href="logout.php" style="color:#252525"><i class="fas fa-sign-out-alt" ></i></a>
                         </span> 
                     </center>
